@@ -14,30 +14,6 @@ class FunctionalityModel {
     }
 }
 
-const functionalityConverter = {
-    toFirestore: function(functionality) {
-      return {
-      icon: functionality.icon,
-      title: functionality.title,
-      description:functionality.description,
-      targetAudience:functionality.targetAudience,
-      };
-    },
-    fromFirestore: function(snapshot, options) {
-      console.log("hello");
-      const data = snapshot.data(options);
-      if (!rootStore.functionalityStore.findFunctionalityById(snapshot.id)){
-        return new FunctionalityModel({
-        id: snapshot.id,
-        icon: data.Icon,
-        title: data.Title,
-        description: data.Description,
-        targetAudience: data.TargetAudience
-        });
-      }
-     
-    }
-  };
 
 decorate(FunctionalityModel, {
     id: observable,
@@ -46,6 +22,31 @@ decorate(FunctionalityModel, {
     title: observable,
     description: observable
 })
+
+const functionalityConverter = {
+  toFirestore: function(functionality) {
+    return {
+    icon: functionality.icon,
+    title: functionality.title,
+    description:functionality.description,
+    targetAudience:functionality.targetAudience,
+    };
+  },
+  fromFirestore: function(snapshot, options) {
+    console.log("hello");
+    const data = snapshot.data(options);
+    if (!rootStore.functionalityStore.findFunctionalityById(snapshot.id)){
+      return new FunctionalityModel({
+      id: snapshot.id,
+      icon: data.Icon,
+      title: data.Title,
+      description: data.Description,
+      targetAudience: data.TargetAudience
+      });
+    }
+
+  }
+};
 
 export {functionalityConverter}
 
