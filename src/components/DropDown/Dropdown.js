@@ -1,9 +1,14 @@
 import React from 'react';
+import style from './Dropdown.css'
 
-const Dropdown = () => {
+const Dropdown = ({icon, title, description}) => {
     return (
-        <div>
-            <p>hello world</p>
+        <div className={style.dropdown__menu}>
+            <img className={style.dropdown__menuItem__icon} src={icon}></img>
+            <div className={style.dropdown__menu__info}>
+                <h2 className= {style.dropdown__menu__title}>{title}</h2>
+                <p className = {style.dropdown__menu__description}>{description}</p>
+            </div>
         </div>
     );
 };
