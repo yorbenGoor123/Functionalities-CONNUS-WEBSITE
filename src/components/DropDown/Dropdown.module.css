@@ -1,8 +1,20 @@
 .dropdown__menu {
     display: flex;
     border-bottom: 1px solid black;
+    animation: fadeIn ease-in-out .5s;
+    animation-fill-mode: forwards;
 }
 
 .dropdown__menu__info {
     margin-left: 2rem;
 }
+
+.dropdown__menu__description {
+    color: #818181;
+    line-height: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
