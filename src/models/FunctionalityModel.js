@@ -2,6 +2,7 @@
 import { decorate, observable } from "mobx";
 import {rootStore} from "../stores/index.js";
 
+
 class FunctionalityModel {
     constructor({id, targetAudience, icon, title, description}){
         this.id = id;
@@ -47,4 +48,4 @@ decorate(FunctionalityModel, {
 
 export {functionalityConverter}
 
-export default FunctionalityStore;
+export default FunctionalityModel;

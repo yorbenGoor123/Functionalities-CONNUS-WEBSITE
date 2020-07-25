@@ -8,8 +8,8 @@ class FunctionalityStore {
         this.functionalities = [];
     }
 
-    addFunctionality (functionality) {
-        this.functionalities.push(functionality);
+    async getFunctionality () {
+        await this.functionalities.push(this.functionalityService.getFunctionalities());
     }
 
     findFunctionalityById(id){

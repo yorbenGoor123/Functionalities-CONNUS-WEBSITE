@@ -6,7 +6,7 @@ class FunctionalityService {
         this.db = firebase.firestore()
     }
 
-    getJourneys = async () => {
+    getFunctionalities = async () => {
         const functionalities = await this.db
         .collection("Functionality")
         .withConverter(functionalityConverter)
