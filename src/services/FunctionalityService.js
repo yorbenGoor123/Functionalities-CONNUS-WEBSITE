@@ -1,5 +1,5 @@
 import 'firebase/firestore';
-import {functionalityConverter} from "../models/Journey";
+import {functionalityConverter} from "../models/FunctionalityModel";
 
 class FunctionalityService {
     constructor(firebase){

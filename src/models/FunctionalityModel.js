@@ -24,16 +24,13 @@ const functionalityConverter = {
     fromFirestore: function(snapshot, options) {
       console.log("hello");
       const data = snapshot.data(options);
-      if (!rootStore.journeyStore.findJourneyById(snapshot.id)){
-        return new Journey({
+      if (!rootStore.functionalityStore.findFunctionalityById(snapshot.id)){
+        return new FunctionalityModel({
         id: snapshot.id,
-        location: data.location,
-        sorted: data.sorted,
-        title: data.title,
-        images: data.images,
-        text: data.text,
-        carrierID: data.carrierID,
-        date: data.date
+        icon: data.Icon,
+        title: data.Title,
+        description: data.Description,
+        targetAudience: data.TargetAudience
         });
       }
      
