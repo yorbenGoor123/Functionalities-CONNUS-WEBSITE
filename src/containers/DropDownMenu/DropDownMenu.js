@@ -8,10 +8,18 @@ const DropDownMenu = () => {
 
     const {functionalityStore} = useStore();
 
+    let functionalityArray = [];
+    for (let i = 1; i<= functionalityStore.functionalities.length; i++){
+      let functionality = functionalityStore.functionalities.find(functionality => functionality.sorted === i);
+      functionalityArray.push(functionality);
+    }
+
+    console.log(functionalityArray);
+
     return (
         <div className={style.dropDownMenu}>
 
-            {functionalityStore.functionalities.map(functionality => (
+            {functionalityArray.map(functionality => (
                 <Dropdown key={functionality.id} icon={functionality.icon} title={functionality.title} description={functionality.description} /> 
             ))}
            

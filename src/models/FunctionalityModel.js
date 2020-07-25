@@ -4,12 +4,13 @@ import {rootStore} from "../stores/index.js";
 
 
 class FunctionalityModel {
-    constructor({id, targetAudience, icon, title, description}){
+    constructor({id, targetAudience, icon, title, description, sorted}){
         this.id = id;
         this.targetAudience = targetAudience;
         this.icon = icon;
         this.title = title;
         this.description = description;
+        this.sorted = sorted;
         rootStore.functionalityStore.addFunctionality(this);
     }
 }
@@ -30,6 +31,7 @@ const functionalityConverter = {
     title: functionality.title,
     description:functionality.description,
     targetAudience:functionality.targetAudience,
+    sorted: functionality.sorted
     };
   },
   fromFirestore: function(snapshot, options) {
@@ -41,7 +43,8 @@ const functionalityConverter = {
       icon: data.Icon,
       title: data.Title,
       description: data.Description,
-      targetAudience: data.TargetAudience
+      targetAudience: data.TargetAudience,
+      sorted: data.sorted
       });
     }
 
