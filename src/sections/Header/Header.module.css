@@ -1,6 +1,4 @@
 .navMenu {
-
-    height: 100vh;
     position: absolute;
     top: 20%;
     left: 40%;
@@ -9,11 +7,11 @@
 .menu__items {
     display: flex;
     justify-content: center;
-    width: 25rem;
     padding: 0;
     text-decoration: none;
 }
 
 .menu__item {
     list-style-type: none;
+    color: white;
 }
