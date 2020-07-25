@@ -1,5 +1,6 @@
 import * as firebase from "firebase/app";
 import { configure } from 'mobx';
+import FunctionalityStore from './FunctionalityStore';
 
 
 configure({enforceActions: "observed"});
@@ -17,6 +18,7 @@ class RootStore {
           };
         // Initialize Firebase
         this.firebase = firebase.initializeApp(firebaseConfig);
+        this.functionalityStore = new FunctionalityStore(this);
     }
 }
 
