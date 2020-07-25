@@ -19,14 +19,16 @@ const Header = () => {
 
     return useObserver(() => (
     <header className="website-header">
-      <div className={style.navMenu}>
+      <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={style.navMenu}>
       
         <ul className={style.menu__items}>
-          <li className={style.menu__item} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Functionalities</li>
+          <li className={style.menu__item}>Functionalities</li>
         </ul>
 
         {uiStore.dropdown ? 
-        <DropDownMenu />
+        <div >
+        <DropDownMenu  />
+        </div>
         : null}
 
       </div>
