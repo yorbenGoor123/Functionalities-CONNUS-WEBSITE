@@ -4,13 +4,11 @@ import Dropdown from '../../components/DropDown/Dropdown';
 import { useObserver } from 'mobx-react-lite';
 import DropDownMenu from '../../containers/DropDownMenu/DropDownMenu';
 import style from './Header.module.css';
-import { rootStore } from '../../stores';
 
 const Header = () => {
 
   const handleMouseEnter = () => {
     uiStore.viewDropdown();  
-    console.log(rootStore.functionalityStore.functionalities);
  
   }
 
