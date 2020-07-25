@@ -12,7 +12,7 @@ const DropDownMenu = () => {
         <div className={style.dropDownMenu}>
 
             {functionalityStore.functionalities.map(functionality => (
-                <Dropdown key={functionality.id} icon={iconFunc} title={functionality.title} description={functionality.description} /> 
+                <Dropdown key={functionality.id} icon={functionality.icon} title={functionality.title} description={functionality.description} /> 
             ))}
            
         </div>
