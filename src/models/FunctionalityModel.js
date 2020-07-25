@@ -10,6 +10,7 @@ class FunctionalityModel {
         this.icon = icon;
         this.title = title;
         this.description = description;
+        rootStore.functionalityStore.addFunctionality(this);
     }
 }
 

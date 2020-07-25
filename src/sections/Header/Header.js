@@ -9,18 +9,15 @@ import { rootStore } from '../../stores';
 const Header = () => {
 
   const handleMouseEnter = () => {
-    uiStore.viewDropdown();
-    console.log(uiStore.dropdown);
-
-    rootStore.functionalityStore.getFunctionality();
+    uiStore.viewDropdown();  
     console.log(rootStore.functionalityStore.functionalities);
-
-    
+ 
   }
 
   const handleMouseLeave = () => {
     uiStore.disableDropdown();
-    console.log(uiStore.dropdown);
+    
+  
   }
 
     return useObserver(() => (

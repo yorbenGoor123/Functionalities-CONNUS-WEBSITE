@@ -19,6 +19,7 @@ class RootStore {
         // Initialize Firebase
         this.firebase = firebase.initializeApp(firebaseConfig);
         this.functionalityStore = new FunctionalityStore(this);
+    
     }
 }
 
