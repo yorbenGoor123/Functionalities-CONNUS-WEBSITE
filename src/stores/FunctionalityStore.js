@@ -9,6 +9,10 @@ class FunctionalityStore {
     addFunctionality (functionality) {
         this.functionalities.push(functionality);
     }
+
+    findFunctionalityById(id){
+        return this.functionalities.find(functionality => functionality.id === id);
+    }
 }
 
 decorate(FunctionalityStore, {
