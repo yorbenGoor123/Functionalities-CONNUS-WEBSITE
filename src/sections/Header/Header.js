@@ -3,6 +3,7 @@ import { uiStore } from '../../stores/UiStore';
 import Dropdown from '../../components/DropDown/Dropdown';
 import { useObserver } from 'mobx-react-lite';
 import DropDownMenu from '../../containers/DropDownMenu/DropDownMenu';
+import style from './Header.module.css';
 
 const Header = () => {
 
@@ -17,15 +18,19 @@ const Header = () => {
   }
 
     return useObserver(() => (
-        <header className="website-header">
-        <ul>
-          <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Functionalities</li>
+    <header className="website-header">
+      <div className={style.navMenu}>
+      
+        <ul className={style.menu__items}>
+          <li className={style.menu__item} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Functionalities</li>
         </ul>
 
         {uiStore.dropdown ? 
         <DropDownMenu />
         : null}
-      </header>
+
+      </div>
+    </header>
     ));
 };
 
