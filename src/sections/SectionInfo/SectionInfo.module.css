@@ -1,5 +1,10 @@
 .detailPageSectionInfo__wrapper {
-    display: flex;;
+    display: flex;
+}
+
+.directionLeft {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .detailPageSectionInfo__paragraphs {
@@ -9,4 +14,16 @@
 
     margin-left: 10rem;
     margin-right: 10rem;
+}
+
+.detailPageSectionInfo__title {
+    font-size: 3rem;
+    width: 65%;
+    color: #5375FF;
+}
+
+.detailPageSectionInfo__paragraph {
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    color: #1E1E1E;
 }
