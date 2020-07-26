@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from '../../pages/landing/Header';
+import style from './HeaderFunctionalities.module.css';
 
 const HeaderFunctionalities = () => {
     return (
         <>
        <Header />
-       <p>hello world</p>
+       <div className={style.backgroundWrapper}>
+       </div>
        </>
     );
 };

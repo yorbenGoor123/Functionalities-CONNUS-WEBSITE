@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './pages/landing/Header';
 import { Switch, Route} from "react-router-dom";
 import SectionInfo from './sections/SectionInfo/SectionInfo';
 import ROUTES from './consts/routes';
 import DetailFunctionalities from './pages/detail/DetailFunctionalities';
+import HeaderFunctionalities from './sections/HeaderFunctionalities/HeaderFunctionalities';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 
     <Switch>
       <Route exact path = {ROUTES.home}>
-        <Header />
+        <HeaderFunctionalities />
       </Route>
 
       <Route path = {ROUTES.functionality}>
