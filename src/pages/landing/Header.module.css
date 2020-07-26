@@ -13,6 +13,7 @@
     margin-left: 1rem;
 }
 
+
 .menu__items {
     display: flex;
     justify-content: center;
@@ -20,6 +21,7 @@
     text-decoration: none;
     margin: 0;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .menu__item {

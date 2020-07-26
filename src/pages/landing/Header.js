@@ -21,8 +21,8 @@ const Header = () => {
 
     return useObserver(() => (
     <header className={style.websiteHeader}>
-    
       <img src={logo} alt="logo"></img>
+
       <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={style.navMenu}>
         
         <ul className={style.menu__items}>

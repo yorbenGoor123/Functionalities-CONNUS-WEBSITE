@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from '../../pages/landing/Header';
 
 const HeaderFunctionalities = () => {
     return (
-       <header>
-           <p>hello world</p>
-       </header>
+        <>
+       <Header />
+       <p>hello world</p>
+       </>
     );
 };
 
