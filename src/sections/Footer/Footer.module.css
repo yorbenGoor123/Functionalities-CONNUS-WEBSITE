@@ -3,4 +3,23 @@
     background-repeat: no-repeat;
     background-size: 100%;
     height: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.socials{
+    list-style-type: none;
+    display: flex;
+    margin-right: 2rem;
+}
+
+.socialsItem {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.privacyPolicy{ 
+    color: white;
+    text-decoration: underline;
 }
