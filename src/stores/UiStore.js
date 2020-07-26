@@ -3,7 +3,7 @@ import {decorate, action, observable} from 'mobx'
 class UiStore {
     constructor () {
         this.dropdown = false;
-        this.sortedFunctionalities = []
+    
     }
 
     viewDropdown () {
@@ -14,9 +14,6 @@ class UiStore {
         this.dropdown = false;
     }
 
-    setSorted (functionality) {
-        this.sortedFunctionalities.push(functionality);
-    }
 }
 
 
