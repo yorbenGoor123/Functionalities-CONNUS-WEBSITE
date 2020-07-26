@@ -6,7 +6,7 @@ const DetailFunctionalities = () => {
     return (
         <div className={style.detailWrapper}>
            <HeaderFunctionalities />
-           <p>hello world</p>
+           <p>Detail page functionalities</p>
         </div>
     );
 };
