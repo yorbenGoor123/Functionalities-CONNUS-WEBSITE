@@ -3,6 +3,8 @@ import Dropdown from '../../components/DropDown/Dropdown';
 import iconFunc from '../../assets/iconFunProfessionalNetwork.svg';
 import style from './DropDownMenu.module.css';
 import {useStore} from '../../hooks/index';
+import { Link } from 'react-router-dom';
+import ROUTES from '../../consts/routes';
 
 const DropDownMenu = () => {
 
@@ -20,7 +22,9 @@ const DropDownMenu = () => {
         <div className={style.dropDownMenu}>
 
             {functionalityArray.map(functionality => (
+                <Link to={`/functionality/${functionality.id}`} style={{ textDecoration: 'none' }}>
                 <Dropdown key={functionality.id} icon={functionality.icon} title={functionality.title} description={functionality.description} /> 
+                </Link>
             ))}
            
         </div>
