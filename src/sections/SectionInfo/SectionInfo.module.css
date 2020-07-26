@@ -1,0 +1,12 @@
+.detailPageSectionInfo__wrapper {
+    display: flex;;
+}
+
+.detailPageSectionInfo__paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 10rem;
+    margin-right: 10rem;
+}

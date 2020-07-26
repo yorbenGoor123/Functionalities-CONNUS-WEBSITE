@@ -2,6 +2,7 @@ import React from 'react';
 import style from './DetailFunctionalities.module.css'
 import HeaderFunctionalities from '../../sections/HeaderFunctionalities/HeaderFunctionalities';
 import HeaderImage from '../../assets/detailpages/01-content-creator/headerImage.svg'
+import SectionInfo from '../../sections/SectionInfo/SectionInfo';
 const DetailFunctionalities = () => {
     return (
         <div className={style.detailWrapper}>
@@ -22,6 +23,8 @@ const DetailFunctionalities = () => {
                 <li className={style.detailPage__MenuItem}>Share tips, tricks, and insights.</li>
                 <li className={style.detailPage__MenuItem}>On the road or at your desk?</li>
             </ul>
+
+            <SectionInfo />
            
         </div>
     );
