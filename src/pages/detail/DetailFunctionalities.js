@@ -7,6 +7,7 @@ import style from './DetailFunctionalities.module.css'
 import HeaderFunctionalities from '../../sections/HeaderFunctionalities/HeaderFunctionalities';
 import HeaderImage from '../../assets/detailpages/01-content-creator/headerImage.svg'
 import SectionInfo from '../../sections/SectionInfo/SectionInfo';
+import Footer from '../../sections/Footer/Footer';
 const DetailFunctionalities = () => {
     return (
         <div className={style.detailWrapper}>
@@ -55,7 +56,10 @@ const DetailFunctionalities = () => {
             direction="left"
             marginLeft="10rem" />
            
+           <Footer />
         </div>
+
+        
     );
 };
 
